@@ -28,8 +28,7 @@ unsigned int hf_mod(std::string inString)
 	/* unsigned -- для исключения отрицательного значения,
 	*  например: ввод кирилицы
 	*/
-	unsigned int mod = sum(inString) % SIZE;
-	return mod;
+	return sum(inString) % SIZE;
 }
 
 // «Хеш-функция», основанная на умножении
@@ -38,8 +37,7 @@ unsigned int hf_mul(std::string inString)
 	/* unsigned -- для исключения отрицательного значения,
 	*  например: ввод кирилицы
 	*/
-	unsigned int mul = fmod(sum(inString) * 0.618033, 1) * SIZE;
-	return mul;
+	return fmod(sum(inString) * 0.1099, 1) * SIZE;
 }
 // ---------------------------------------------------------------
 
